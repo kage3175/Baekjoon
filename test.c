@@ -1,11 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
-int p[3]={0,1,2};
-
+char *a;
+char *b;
 
 int main(void){
-	int v=0;
-	printf("%d %d\n", *p, ++(*p));
-	printf("%d\n", *(p+1));	
+	int n=6;
+	a=(char*)malloc(sizeof(char)*n);
+	b=(char*)malloc(sizeof(char)*n);
+	
+	scanf("%s", a);
+	b[0]=a[0];
+	printf("%c", b[0]);
+	
+	free(a);
+	free(b);	
+	return 0;
 }
