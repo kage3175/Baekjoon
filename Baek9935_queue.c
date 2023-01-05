@@ -26,7 +26,7 @@ int pop(Queue *queue);
 Queue queue[500001];
 char str[1000001];
 char bomb[37];
-//bomb_ptr 아직 안 쓰임 
+
 int main(void){
 	char trash;char ch;int str_len;int bomb_len;int is_frula;/*is_frula가 0이면 frula를 출력해야함*/int queue_num=0;int bomb_ptr;int flag=0;
 	scanf("%s", str);
